@@ -7,6 +7,8 @@ class IndexedItemArray {
 
 	array () { return this._array }
 
+	size () { return this._array.length }
+
 	at (i) { return this._array.at(i) }
 
 	set (i, item) {
