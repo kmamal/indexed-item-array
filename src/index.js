@@ -21,11 +21,18 @@ class IndexedItemArray {
 		this._array.push(item)
 	}
 
+	pop () {
+		const item = this._array.pop()
+		delete item[this._indexKey]
+		return item
+	}
+
 	removeItem (item) {
 		this.removeIndex(item[this._indexKey])
 	}
 
 	removeIndex (index) {
+		delete this._array[index][this._indexKey]
 		if (index !== this._array.length - 1) {
 			this.set(index, this._array.at(-1))
 		}
