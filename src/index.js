@@ -5,6 +5,8 @@ class IndexedItemArray {
 		this._indexKey = indexKey
 	}
 
+	array () { return this._array }
+
 	at (i) { return this._array.at(i) }
 
 	set (i, item) {
