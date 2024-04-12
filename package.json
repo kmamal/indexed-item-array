@@ -1,0 +1,22 @@
+{
+  "version": "0.0.0",
+  "name": "@kmamal/indexed-item-array",
+  "description": "indexed-item-array",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:kmamal/indexed-item-array.git"
+  },
+  "license": "MIT",
+  "main": "./src/index.js",
+  "exports": "./src/index.js",
+  "scripts": {
+    "test": "npx -p @kmamal/testing testing",
+    "update-exports": "node ./scripts/update-exports.mjs"
+  },
+  "dependencies": {
+    "@kmamal/util": "^0.2.1"
+  },
+  "devDependencies": {
+    "@kmamal/testing": "^0.0.30"
+  }
+}
